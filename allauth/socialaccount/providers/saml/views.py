@@ -12,6 +12,7 @@ from django.utils.decorators import method_decorator
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 
+# xmlsec==1.3.14 install this version to avoid errors
 from onelogin.saml2.auth import OneLogin_Saml2_Settings
 from onelogin.saml2.errors import OneLogin_Saml2_Error
 

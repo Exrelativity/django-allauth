@@ -23,6 +23,16 @@ DATABASES = {
     }
 }
 
+# Required for MFA passkey signup
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION_BY_CODE_ENABLED = True
+ACCOUNT_SIGNUP_FIELDS = ['email']
+
+# Recommended primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ACCOUNT_SIGNUP_FIELDS = ['email*']
+
 ROOT_URLCONF = "tests.regular.urls"
 LOGIN_URL = "/accounts/login/"
 
